@@ -1,0 +1,43 @@
+# Paths to directories that will be created during code execution
+folders_paths:
+  # Path to the temp folder
+  temp_folder: "temp"
+  # Path to the folder where cropped images are stored
+  temp_folder_crop: "temp/cropped_img"
+  # Path to the temporary folder where transformed images will be stored
+  temp_folder_trans: "temp/transformed_img"
+  # Path to the temporary folder where reclassified images will be stored
+  temp_polder_rec: "temp/reclassified_img"
+  # Path to the folder where images with palette colors and country boundaries will be saved
+  temp_folder_img_v1: "temp/final/templates_v1/Data"
+  temp_folder_img_v2: "temp/final/templates_v2/Data"
+  # Path to the folder where final PNG images will be saved
+  temp_folder_final: "temp/final/"
+
+# Path to the folder containing model predictions (base images)
+# path_to_sours: "//monospace/mendelu/Windy/SoilClim2_Windy/Prediction"
+path_to_sours: "data/2024-06-20"
+
+# Path to the folder where image templates (frames) are stored
+path_to_tamplates: "data/raster_tamplates/background_tamplates"
+
+# Path to the raster file containing area of interest parameters (frame)
+frame_to_raster: "data/raster_tamplates/extent/extent_operativa.tif"
+
+# Paths to shapefiles
+shapefiles_paths:
+  # Path to the shapefile containing country boundaries
+  path_countrys: "data/shapefiles/country.shp"
+  # Path to the shapefile containing target country boundaries (countries to highlight)
+  path_central_countrys: "data/shapefiles/country_domena.shp"
+  # Path to the shapefile containing sea boundaries
+  path_sea: "data/shapefiles/sea.shp"
+
+# Path to the font file that is used in templates
+font_path: "data\\font\\Roboto-Regular.ttf"
+
+# This is the directory on the SFTP server where completed images will be uploaded for the website.
+remote_sftp_dir: "data/"
+
+# This is the directory on the FTP server where completed images will be uploaded for the website.
+remote_ftp_dir: "/firerisk/maps/"
