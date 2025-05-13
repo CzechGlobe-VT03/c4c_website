@@ -347,10 +347,31 @@ function getFigData(value) {
         type: "wildfire",
         desc_name: "fire_spread_desc",
       }
+    case 'DFM1h':
+      return {
+        value: value,
+        filename: "DFM1H_cm",
+        type: "wildfire",
+        desc_name: "fuel_moisture_desc",
+      }
     case 'DFM10h':
       return {
         value: value,
         filename: "DFM10H_cm",
+        type: "wildfire",
+        desc_name: "fuel_moisture_desc",
+      }
+    case 'DFM100h':
+      return {
+        value: value,
+        filename: "DFM100H_cm",
+        type: "wildfire",
+        desc_name: "fuel_moisture_desc",
+      }
+    case 'DFM1000h':
+      return {
+        value: value,
+        filename: "DFM1000H_cm",
         type: "wildfire",
         desc_name: "fuel_moisture_desc",
       }
