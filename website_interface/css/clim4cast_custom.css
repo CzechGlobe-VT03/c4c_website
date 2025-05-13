@@ -151,6 +151,16 @@
     width: 100%;
 }
 
+#btn-group-wildfire {
+    display: grid;
+    grid-template:
+    "fwi dfmc dfmc dfmc dfmc" 40px
+    "fwi 1h 10h 100h 1000h" 40px / 2fr 1fr 1fr 1fr 1fr;;
+}
+
+#btn-fire_spread {grid-area: fwi;}
+#btn-fuel_moisture {grid-area: dfmc;}
+
 .product_switch div {
     background-color: #84aab0;
     border-color: #6c757d;
