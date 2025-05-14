@@ -2,7 +2,6 @@ from pathlib import Path
 import sys
 sys.path.append('D:/CzechGlobe/Task/ClimateTemplate')
 
-
 from datetime import date, datetime
 import os
 
@@ -61,14 +60,14 @@ remote_ftp_dir = path_config["remote_ftp_dir"]
 def main():
     start_time = datetime.now()
 
-    # # Get today's date and format the date as YYYY-MM-DD
-    # today = date.today()
+    # Get today's date and format the date as YYYY-MM-DD
+    today = date.today()
 
-    # # Creating a path to the data folder
-    # path_to_data = create_data_folder_path(path_to_sours, today)
+    # Creating a path to the data folder
+    path_to_data = create_data_folder_path(path_to_sours, today)
 
-    # NOTE TEST
-    path_to_data = path_to_sours
+    # # NOTE TEST
+    # path_to_data = path_to_sours
 
     # Ensure necessary directories exist
     folders = [
