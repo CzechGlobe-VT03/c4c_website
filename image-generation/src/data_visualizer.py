@@ -1,8 +1,8 @@
 from PIL import Image, ImageDraw, ImageFont
 from pathlib import Path
+import os
 
 from src.data_loader import load_config
-
 
 path_config = load_config("config.yaml")
 
