@@ -143,8 +143,8 @@ def main():
         ensure_directory_exists(target_folder)
 
         # Determine which palette variant needs to be applied  
-        parent = os.path.dirname(os.path.dirname(target_folder))  # піднялись на два рівні
-        result = os.path.basename(parent)  # тепер отримаємо templates_v2
+        parent = os.path.dirname(os.path.dirname(target_folder))
+        result = os.path.basename(parent)
 
         if result == "templates_v1":
             list_for_background = list_for_background_layout_v1
