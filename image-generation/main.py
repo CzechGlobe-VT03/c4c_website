@@ -125,7 +125,6 @@ def main():
             PALETTES_V2,
             )
 
-
     templates_dict = {}
     # Recursively go through all subfolders with templates 
     for root, _, files in os.walk(path_to_tamplates):
@@ -138,14 +137,15 @@ def main():
 
             # Add to the dictionary  
             templates_dict[result_path] = template_files
-
     
     # Add generated rasters to templates  
     for target_folder, template_list in templates_dict.items():
         ensure_directory_exists(target_folder)
 
         # Determine which palette variant needs to be applied  
-        result = os.path.basename(os.path.dirname(target_folder))
+        parent = os.path.dirname(os.path.dirname(target_folder))  # піднялись на два рівні
+        result = os.path.basename(parent)  # тепер отримаємо templates_v2
+
         if result == "templates_v1":
             list_for_background = list_for_background_layout_v1
         else:
